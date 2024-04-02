@@ -1,0 +1,10 @@
+name: deploiement du cv
+on : [push,pull_request]
+jobs:
+ release: 
+   runs-on: ubuntu-20.04
+     steps:
+     - name: installations des dépendances
+       run: echo 'install dependances'
+     - name: fin de message
+       run: echo 'all done'
