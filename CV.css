@@ -34,7 +34,7 @@ body
 .Contenu .Gauche
 {
     position: relative; /*position*/
-    background: #003147; /*pour la couleur de fond de la partie gauche*/
+    background: var(--Couleurdominante); /*pour la couleur de fond de la partie gauche*/
     padding: 30px; /*marge*/
     color: #fff; /*pour la couleur du texte*/
 
@@ -101,17 +101,23 @@ list-style: none;
 }
 
 .Contenu .Droite .Metier
-{ color: #003147; /*Change du texte du titre*/
+{ color: var(--Couleurdominante); /*Change la couleur du texte du titre*/
 }
 
 .Contenu .Droite .ExpPros .Titre
-{ color: #003147;
+{ color: var(--Couleurdominante);
 }
 
 .Contenu .Droite .Formations .Titre
-{ color: #003147;
+{ color: var(--Couleurdominante);
 }
 
 .Contenu .Droite .Compétences .Titre
-{ color: #003147;
+{ color: var(--Couleurdominante);
+}
+
+
+:root /*Permet de changer la couleur dominante de la page qui est le bleu*/
+{
+    --Couleurdominante: #003147;
 }
