@@ -1,0 +1,117 @@
+@import url('https://fonts.googleappis.com/css?family=Inter:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+ 
+    
+}
+body 
+{
+    background: lightblue; /*Couleur de fond*/
+    display:flex;/*Centrer la page*/
+    justify-content: center; /*Centrer le contenu de la page*/
+    align-items: center;/*Centrer les items*/
+    min-height: 100vh;/*Longueur minimale*/
+}
+
+.Contenu
+{
+    position: relative; /*position de la page */
+    width: 100%; /*largeur*/
+    max-width: 21cm; /*largeur maximale (feuille A4)*/
+    min-height: 29,7cm; /*longueur min(feuille A4)*/
+    background: #fff; /*couleur de fond du contenu*/
+    margin: 50px; /*espacement entre le debut de la page et le debut du texte*/
+    display: grid; /*page divisée en case*/
+    grid-template-columns: 1fr 2fr; /*Tailles des cases*/
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1); /*rajoute un effet d'ombrage autour de la page*/
+
+}
+
+
+.Contenu .Gauche
+{
+    position: relative; /*position*/
+    background: #003147; /*pour la couleur de fond de la partie gauche*/
+    padding: 30px; /*marge*/
+    color: #fff; /*pour la couleur du texte*/
+
+}
+
+.PhotosEtContact .image
+{
+position: relative;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+}
+.PhotosEtContact ul
+{
+list-style: none; /*Enlève les pastilles de liste*/
+}
+.PhotosEtContact .image img
+{
+   position: absolute; /*position de l'image*/
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.PhotosEtContact  h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.Reseaux ul
+{
+list-style: none;
+}
+.Infos h2 span
+{
+    font-size: 0.8em;
+
+}
+.Infos .Contact
+{
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+
+.Contenu .Droite
+{
+    position: initial;
+    background: #fff;
+    padding: 30px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.Contenu .Droite .Metier
+{ color: #003147; /*Change du texte du titre*/
+}
+
+.Contenu .Droite .ExpPros .Titre
+{ color: #003147;
+}
+
+.Contenu .Droite .Formations .Titre
+{ color: #003147;
+}
+
+.Contenu .Droite .Compétences .Titre
+{ color: #003147;
+}
